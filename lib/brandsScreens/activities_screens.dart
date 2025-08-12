@@ -44,7 +44,7 @@ class _ActivitiesScreenState extends State<ActivitiesScreen>
           ),
         ),
         title: const Text(
-          "Yatu",
+          "Safe Pastures",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

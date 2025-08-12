@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Yatu',
+      title: 'Safe Pastures',
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),

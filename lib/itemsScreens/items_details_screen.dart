@@ -44,7 +44,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
           ),
         ),
         title: const Text(
-          "Yatu",
+          "Safe Pastures",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
