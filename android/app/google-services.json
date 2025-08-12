@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796578778076",
+    "project_id": "yatu-461ad",
+    "storage_bucket": "yatu-461ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796578778076:android:39153ed17347245ae79d19",
+        "android_client_info": {
+          "package_name": "com.example.yatu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796578778076-2aft2jakebonipql1sh88tjdn11qdh3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtuZbFzl1L2joJXAui0Gwzq44VyOfwf0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796578778076-2aft2jakebonipql1sh88tjdn11qdh3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
