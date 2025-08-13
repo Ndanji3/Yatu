@@ -219,14 +219,20 @@ class _ClaimState extends State<Claim> {
                   children: [
                     _row([
                       _text('Name of Insured', insuredNameCtrl, validator: _required),
-                      _text('Phone Number', phoneCtrl, keyboardType: TextInputType.phone, validator: _required),
+                    ]),
+                      _row([
+                        _text('Phone Number', phoneCtrl, keyboardType: TextInputType.phone, validator: _required),
                     ]),
                     _row([
                       _text('Address', addressCtrl, maxLines: 2, validator: _required),
+                    ]),
+                    _row([
                       _text('Facsimile Number', faxCtrl, keyboardType: TextInputType.phone),
                     ]),
                     _row([
                       _text('Policy Number', policyNumberCtrl, validator: _required),
+                    ]),
+                      _row([
                       _dateField(
                         label: 'Date of Last Premium Paid',
                         value: lastPremiumPaidDate,
@@ -246,6 +252,8 @@ class _ClaimState extends State<Claim> {
                         onChanged: (v) => setState(() => dateOfLoss = v),
                         requiredField: true,
                       ),
+                      ]),
+                    _row([
                       _timeField(
                         label: 'Time of Loss',
                         value: timeOfLoss,
@@ -271,6 +279,8 @@ class _ClaimState extends State<Claim> {
                         value: lastSeenDate,
                         onChanged: (v) => setState(() => lastSeenDate = v),
                       ),
+                      ]),
+                    _row([
                       _timeField(
                         label: 'Time Last Seen',
                         value: lastSeenTime,
@@ -283,6 +293,8 @@ class _ClaimState extends State<Claim> {
                         value: lossDiscoveredDate,
                         onChanged: (v) => setState(() => lossDiscoveredDate = v),
                       ),
+                      ]),
+                    _row([
                       _text('Loss Discovered By (Name)', lossDiscoveredByCtrl),
                     ]),
                   ],
