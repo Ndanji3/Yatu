@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:yatu/Camera/camera.dart';
+import 'package:yatu/insurance/policy.dart';
 import 'package:yatu/widgets/my_drawer.dart';
 
 
@@ -19,15 +20,35 @@ class Insurance extends StatelessWidget
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
-              expandedHeight: 200,
-              toolbarHeight: 100,
+              expandedHeight: 80,
+              toolbarHeight: 75,
               backgroundColor: Colors.greenAccent,
 
               pinned: false,
               flexibleSpace: FlexibleSpaceBar(
-                background: Image.asset("images/fox.png"),
+               // background: Image.asset("images/logo1.png"),
                 title: Text('Safe Pastures',style: TextStyle(color:  Colors.white)),
 
+              ),
+            ),
+
+            SliverAppBar(
+              backgroundColor: Colors.deepPurpleAccent,
+              expandedHeight: 150,
+              toolbarHeight: 100,
+              flexibleSpace: FlexibleSpaceBar(
+                titlePadding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                centerTitle: false,
+                background: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Policy Number', style: TextStyle( color:  Colors.white70, fontSize: 25,),),
+                    Text('45 777 888', style: TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),)
+
+                  ],
+                ),
+
+                title: Text('Premuim amuont due: \k55,270.00 ', style: TextStyle(color: Colors.white70, fontSize: 16,)),
               ),
             ),
 
@@ -62,26 +83,6 @@ class Insurance extends StatelessWidget
                     ],
                   ),
                 ),
-              ),
-            ),
-
-            SliverAppBar(
-              backgroundColor: Colors.deepPurpleAccent,
-              expandedHeight: 150,
-              toolbarHeight: 100,
-              flexibleSpace: FlexibleSpaceBar(
-                titlePadding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                centerTitle: false,
-                background: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('Policy Number', style: TextStyle( color:  Colors.white70, fontSize: 25,),),
-                    Text('45 777 888', style: TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),)
-
-                  ],
-                ),
-
-                title: Text('Premuim amuont due: \k55,270.00 ', style: TextStyle(color: Colors.white70, fontSize: 16,)),
               ),
             ),
 
@@ -139,7 +140,10 @@ class Insurance extends StatelessWidget
                     height: 24,
                   ),
                   ElevatedButton(
-                    onPressed: (){},
+                    onPressed: ()
+                    {
+                      Navigator.push(context, MaterialPageRoute(builder: (c)=> Policy()));
+                    },
                     child: Text(
                       'Policy',
                           style: TextStyle(color: Colors.white)

@@ -48,8 +48,8 @@ class _MySplashScreenState extends State<MySplashScreen>
             gradient: LinearGradient(
               colors:
               [
-                Colors.cyan,
-                Colors.lightBlue,
+                Colors.greenAccent,
+                Colors.green,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -66,7 +66,7 @@ class _MySplashScreenState extends State<MySplashScreen>
               Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Image.asset(
-                    "images/logo.png"
+                    "images/logo1.png"
                 ),
               ),
 
